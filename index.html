@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#3f6f5b" />
+  <title>YourAI — consumer demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="os-shell">
+    <div class="titlebar">
+      <div class="traffic"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+      <h1>YourAI — consumer demo</h1>
+      <div class="meta">Lancaster · roofing</div>
+    </div>
+    <div class="workspace">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="mark">Y</div>
+          <div><strong>YourAI</strong><span>Your intent. Your terms.</span></div>
+        </div>
+        <button class="nav-btn active" onclick="resetDemo()">Restart demo</button>
+        <button class="nav-btn" onclick="go('chat')">1. Private chat</button>
+        <button class="nav-btn" onclick="go('preview')">2. Preview card</button>
+        <button class="nav-btn" onclick="go('offers')">3. Offers</button>
+        <button class="nav-btn" onclick="go('receipt')">4. Activity log</button>
+        <button class="nav-btn" onclick="go('visit')">5. After visit</button>
+        <div class="side-note">
+          Click through the phone. Chat stays private until you preview and open a card. Identity unlocks only after a time is booked.
+        </div>
+      </aside>
+
+      <section class="phone-col">
+        <div class="device">
+          <div class="device-screen" id="app"></div>
+        </div>
+      </section>
+
+      <aside class="inspector">
+        <h3>Live trust state</h3>
+        <div class="panel">
+          <div class="kv">
+            <i>Card</i><b id="state-card">private</b>
+            <i>Screen</i><b id="state-screen">chat</b>
+            <i>Budget</i><b id="state-budget">visible band</b>
+            <i>Slots</i><b id="state-slots">0 / 3</b>
+            <i>Credit</i><b id="state-credit">on</b>
+          </div>
+        </div>
+        <div class="panel">
+          <h4>What this demo is proving</h4>
+          <p class="script">
+            Confidant: chat is vaulted.<br>
+            Agency: open is an explicit preview.<br>
+            Harm: no phone until schedule confirm.<br>
+            Loyalty: “why this match” is readable.<br>
+            Money: split is visible; credit is optional.
+          </p>
+        </div>
+        <div class="panel">
+          <h4>Suggested click path</h4>
+          <p class="script">
+            Preview a card → hide budget → Open card → View PeakView → Choose → pick Thursday → Activity → Close card.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
